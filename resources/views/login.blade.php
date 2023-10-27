@@ -34,7 +34,7 @@
                     <a href="#" class="social"><i class='bx bxl-linkedin' style='color:#0d75b1'  ></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
+                <input type="email" placeholder="Email" /   >
                 <input type="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
                 <button>Sign In</button>
