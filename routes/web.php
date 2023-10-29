@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('login');   
 });
+
+//route for form view
+Route::get('/addProduct', function () {return view('pages.addProduct');});
+
+//route for get information of brands table
+Route::get('/getBrand', [ProductController::class, 'getBrands']);
+
+//route for get information of categories table
+Route::get('/getCategorie', [ProductController::class, 'getCategorie']);
