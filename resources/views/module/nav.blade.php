@@ -12,7 +12,7 @@
         </li>
         <li class="toggle-products">
             <a href="#">
-                <i class='bx bxs-home-alt-2'></i>
+                <i class='bx bxs-box'></i>
                 <span class="links_name">Product</span>
             </a>
             <span class="tooltip">Product</span>
@@ -54,7 +54,7 @@
         </li>        
         <li>
             <a href="#" class="toggle-users">
-                <i class='bx bx-male-female'></i>
+                <i class='bx bxs-user-circle'></i>
                 <span class="links_name">Users</span>
             </a>
             <span class="tooltip">Users</span>
@@ -75,21 +75,21 @@
         </li>                    
         <li>
             <a href="{{ url ('/Branch_List') }}">
-                <i class='bx bx-minus-back'></i>
+                <i class='bx bx-git-branch'></i>
                 <span class="links_name">Branch</span>
             </a>
             <span class="tooltip">Branch</span>
         </li>
         <li>
             <a href="{{ url ('/Buy_List') }}">
-                <i class="bx bx-heart"></i>
+                <i class='bx bxs-credit-card'></i>
                 <span class="links_name">Buy</span>
             </a>
             <span class="tooltip">Buy</span>
         </li>
         <li>
             <a href="{{ url ('/Bill_List') }}">
-                <i class="bx bx-heart"></i>
+                <i class='bx bxs-receipt'></i>
                 <span class="links_name">Bill</span>
             </a>
             <span class="tooltip">Bill</span>
