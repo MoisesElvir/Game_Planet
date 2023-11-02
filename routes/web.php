@@ -1,6 +1,15 @@
 <?php
 
+use App\Http\Controllers\billController;
+use App\Http\Controllers\branchController;
+use App\Http\Controllers\brandController;
+use App\Http\Controllers\buyController;
+use App\Http\Controllers\customerController;
+use App\Http\Controllers\employeesController;
+use App\Http\Controllers\imageController;
+use App\Http\Controllers\product_typeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\supplierController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,14 +24,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('login');   
+    return view('template');   
 });
 
-//route for form view
-Route::get('/addProduct', function () {return view('pages.addProduct');});
+Route::get('/image_list', [imageController::class,'index']);
 
-//route for get information of brands table
-Route::get('/getBrand', [ProductController::class, 'getBrands']);
+Route::get('/Product_Type_List', [product_typeController::class,'index']);
 
-//route for get information of categories table
-Route::get('/getCategorie', [ProductController::class, 'getCategorie']);
+Route::get('/Brands_List', [brandController::class,'index']);
+
+Route::get('/Supplier_List', [supplierController::class,'index']);
+
+Route::get('/Product_List', [productController::class,'index']);
+
+Route::get('/Branch_List', [branchController::class,'index']);
+
+Route::get('/Employees_List', [employeesController::class,'index']);
+
+Route::get('/Customers_List', [customerController::class,'index']);
+
+Route::get('/Buy_List', [buyController::class,'index']);
+
+Route::get('/Bill_List', [billController::class,'index']);

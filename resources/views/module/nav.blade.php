@@ -12,31 +12,45 @@
         </li>
         <li class="toggle-products">
             <a href="#">
-                <i class="bx bx-cart-alt"></i>
+                <i class='bx bxs-home-alt-2'></i>
                 <span class="links_name">Product</span>
             </a>
             <span class="tooltip">Product</span>
         </li>
         <li class="hidden2">
-            <a href="#">
+            <a href="{{ url ('/image_list') }}">
+                <i class='bx bx-minus-back'></i>
+                <span class="links_name">Images</span>
+            </a>
+            <span class="tooltip">Images</span>
+        </li>
+        <li class="hidden2">
+            <a href="{{ url ('/Product_Type_List') }}">
+                <i class='bx bx-minus-back'></i>
+                <span class="links_name">Product Type</span>
+            </a>
+            <span class="tooltip">Product Type</span>
+        </li>
+        <li class="hidden2">
+            <a href="{{ url ('/Brands_List') }}">
                 <i class='bx bx-game'></i>
-                <span class="links_name">VideoGames</span>
+                <span class="links_name">Brands</span>
             </a>
-            <span class="tooltip">VideoGames</span>
+            <span class="tooltip">Brands</span>
         </li>
         <li class="hidden2">
-            <a href="#">
+            <a href="{{ url ('/Supplier_List') }}">
                 <i class='bx bx-abacus'></i>
-                <span class="links_name">Consoles</span>
+                <span class="links_name">Supplier</span>
             </a>
-            <span class="tooltip">Consoles</span>
+            <span class="tooltip">Supplier</span>
         </li>
         <li class="hidden2">
-            <a href="#">
+            <a href="{{ url ('/Product_List') }}">
                 <i class='bx bxs-joystick-button'></i>
-                <span class="links_name">Accesories</span>
+                <span class="links_name">Product</span>
             </a>
-            <span class="tooltip">Accesories</span>
+            <span class="tooltip">Product</span>
         </li>        
         <li>
             <a href="#" class="toggle-users">
@@ -46,32 +60,39 @@
             <span class="tooltip">Users</span>
         </li>
         <li class="hidden">
-            <a href="#">
+            <a href="{{ url ('/Employees_List') }}">
                 <i class='bx bx-user'></i>
                 <span class="links_name">Employee</span>
             </a>
             <span class="tooltip">Employee</span>
         </li>
         <li class="hidden">
-            <a href="#">
+            <a href="{{ url ('/Customers_List') }}">
                 <i class='bx bx-user'></i>
                 <span class="links_name">Customer</span>
             </a>
             <span class="tooltip">Customer</span>
         </li>                    
         <li>
-            <a href="#">
+            <a href="{{ url ('/Branch_List') }}">
                 <i class='bx bx-minus-back'></i>
                 <span class="links_name">Branch</span>
             </a>
             <span class="tooltip">Branch</span>
         </li>
         <li>
-            <a href="">
+            <a href="{{ url ('/Buy_List') }}">
                 <i class="bx bx-heart"></i>
-                <span class="links_name">Saved</span>
+                <span class="links_name">Buy</span>
             </a>
-            <span class="tooltip">Saved</span>
+            <span class="tooltip">Buy</span>
+        </li>
+        <li>
+            <a href="{{ url ('/Bill_List') }}">
+                <i class="bx bx-heart"></i>
+                <span class="links_name">Bill</span>
+            </a>
+            <span class="tooltip">Bill</span>
         </li>
         <li>
             <a href="">
@@ -91,4 +112,3 @@
         </li>
     </ul>
 </div>
-

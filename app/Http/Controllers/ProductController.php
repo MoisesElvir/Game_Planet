@@ -2,27 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Brand;
-use App\Models\Categorie;
+use App\Http\Controllers\Controller;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class productController extends Controller
 {
-    //get element of table brabds
-    public function getBrands(){
-        
-        $brand = Brand::all();
-
-        return view('pages.addProduct', ['brand' => $brand]);
+    public function index()
+    {
+        $products = Product::all();
+        return view("pages.product.product_list",array( "product"=>$products));
     }
-
-    public function getCategorie(){
-        $categorie = Categorie::all();
-
-        return view('pages.addProduct', ['product_type' => $categorie]);
-    }
-
-
 }
-
