@@ -19,14 +19,14 @@
         </li>
         <li class="hidden2">
             <a href="{{ url ('/image_list') }}">
-                <i class='bx bx-minus-back'></i>
+                <i class='bx bx-images'></i>
                 <span class="links_name">Images</span>
             </a>
             <span class="tooltip">Images</span>
         </li>
         <li class="hidden2">
             <a href="{{ url ('/Product_Type_List') }}">
-                <i class='bx bx-minus-back'></i>
+                <i class='bx bxs-dashboard'></i>
                 <span class="links_name">Product Type</span>
             </a>
             <span class="tooltip">Product Type</span>
@@ -40,7 +40,7 @@
         </li>
         <li class="hidden2">
             <a href="{{ url ('/Supplier_List') }}">
-                <i class='bx bx-abacus'></i>
+                <i class='bx bxs-truck'></i>
                 <span class="links_name">Supplier</span>
             </a>
             <span class="tooltip">Supplier</span>
@@ -61,7 +61,7 @@
         </li>
         <li class="hidden">
             <a href="{{ url ('/Employees_List') }}">
-                <i class='bx bx-user'></i>
+                <i class='bx bxs-user-account'></i>
                 <span class="links_name">Employee</span>
             </a>
             <span class="tooltip">Employee</span>
