@@ -9,7 +9,7 @@
         <input type="text" class="form-control" name="description">
 
         <select name="brand" id="">
-            @foreach ($collection as $item)
+            @foreach ($brand as $item)
                 <option value="{{$item->id}}">{{$item->name}}</option>
             @endforeach
         </select>
