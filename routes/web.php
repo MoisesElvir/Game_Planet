@@ -33,6 +33,9 @@ Route::get('/Product_Type_List', [product_typeController::class,'index']);
 
 Route::get('/Brands_List', [brandController::class,'index']);
 
+//brands to add product pages
+Route::get('/brands', [brandController::class, 'toAdd']);
+
 Route::get('/Supplier_List', [supplierController::class,'index']);
 
 Route::get('/Product_List', [productController::class,'index']);
@@ -46,3 +49,7 @@ Route::get('/Customers_List', [customerController::class,'index']);
 Route::get('/Buy_List', [buyController::class,'index']);
 
 Route::get('/Bill_List', [billController::class,'index']);
+
+//route for add product
+Route::get('/addProduct', [productController::class, 'showAdd'])->name('addProd');
+
