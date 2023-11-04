@@ -17,8 +17,11 @@ return new class extends Migration
             $table->string('lastname', 50);
             $table->integer('phone');
             $table->string('gender', 10);
-            $table->string('email', 20);
+            $table->string('email', 50);
             $table->string('password', 10);
+
+            $table->unsignedBigInteger('id_status');
+            $table->foreign('id_status')->references('id')->on('status');
             $table->timestamps();
         });
     }

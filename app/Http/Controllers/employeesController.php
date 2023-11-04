@@ -10,7 +10,7 @@ class employeesController extends Controller
 {
     public function index()
     {
-        $employees = Employees::all();
+        $employees = Employees::select('*')->where('id_status', '=', 1)->get();
         return view("pages.employees.employees_list",array( "employee"=>$employees));
     }
 }
