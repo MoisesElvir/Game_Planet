@@ -11,12 +11,39 @@ class brandController extends Controller
     public function index()
     {
         $brands = Brand::all();
-        return view("pages.brand.brand_list",array( "brand"=>$brands));
+        return view("pages.brand.brand_list", array( "brand"=>$brands));
     }
 
     public function toAdd()
     {
         $brands = Brand::all();
         return view('pages.product.add_product', array('brand' => $brands));
+    }
+
+    public function addBrand(Request $request)
+    {
+        $brand = new Brand();
+
+        $brand->name = $request->post('name');
+        $brand->save();
+
+        return redirect()->route('brandList');
+    }
+
+    public function deleteBrand($id)
+    {
+        $brand = Brand::find($id);
+        $brand->delete();
+
+        return redirect()->route('brandList');
+    }
+
+    public function updateBrand(Request $request, $id)
+    {
+        $brand = Brand::find($id);
+        $brand->name = $request->post('name');
+        $brand->save();
+
+        return redirect()->route('brandList');
     }
 }

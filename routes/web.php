@@ -30,16 +30,16 @@ Route::get('/', function () {
 
 Route::get('/image_list', [imageController::class,'index']);
 
-Route::get('/Product_Type_List', [product_typeController::class,'index']);
+Route::get('/Product_Type_List', [product_typeController::class,'index'])->name('categorieList');
 
-Route::get('/Brands_List', [brandController::class,'index']);
+Route::get('/Brands_List', [brandController::class,'index'])->name('brandList');
 
 //brands to add product pages
-Route::get('/brands', [brandController::class, 'toAdd']);
+//Route::get('/brands', [brandController::class, 'toAdd']);
 
-Route::get('/Supplier_List', [supplierController::class,'index']);
+Route::get('/Supplier_List', [supplierController::class,'index'])->name('supplierList');
 
-Route::get('/Product_List', [productController::class,'index']);
+Route::get('/Product_List', [productController::class,'index'])->name('productList');
 
 Route::get('/Branch_List', [branchController::class,'index']);
 
@@ -59,6 +59,33 @@ Route::get('/Buy_List', [buyController::class,'index']);
 
 Route::get('/Bill_List', [billController::class,'index']);
 
+//route for view add product
+Route::get('/showAddProduct', [productController::class, 'showAdd'])->name('showAddProd');
 //route for add product
-Route::get('/addProduct', [productController::class, 'showAdd'])->name('addProd');
+Route::post('/addProduct', [productController::class, 'addProduct'])->name('addP');
+//route for delete product
+Route::delete('/deleteProduct/{id}', [productController::class,'deleteProduct'])->name('deleteP');
 
+//route of view add supplier
+Route::get('/viewAddSupplier', [supplierController::class, 'viewAdd'])->name('viewAddSupplier');
+//route for add supplier
+Route::post('/addSupplier', [supplierController::class, 'addSupplier'])->name('addSupplier');
+//delete supplier
+Route::delete('/deleteSupplier/{id}', [supplierController::class,'deleteSupplier'])->name('deleteSupplier');
+//update supplier
+Route::put('/updateSupplier/{id}', [supplierController::class,'updateSupplier'])->name('updateSupplier');
+
+
+//route for add categorie
+Route::post('/saveCategorie', [product_typeController::class, 'saveCategorie'])->name('saveCategorie');
+//delete categorie
+Route::delete('/deleteCategorie/{id}', [product_typeController::class,'deleteCategorie'])->name('deleteCategorie');
+//update categorie
+Route::put('/updateCategorie/{id}', [product_typeController::class,'updateCategorie'])->name('updateCategorie');
+
+//route for add brand
+Route::post('/addBrand', [brandController::class, 'addBrand'])->name('addBrand');
+//delete brand
+Route::delete('/deleteBrand/{id}', [brandController::class, 'deleteBrand'])->name('deleteBrand');
+//update brand
+Route::put('/updateBrand/{id}', [brandController::class, 'updateBrand'])->name('updateBrand');

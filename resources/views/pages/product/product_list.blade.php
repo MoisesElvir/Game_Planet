@@ -2,7 +2,7 @@
 
 @section('content')
     <h1 class="text-center text-success " >Gestion de Product</h1>
-    <a href="{{ route('addProd')}}" class="btn btn-primary mb-2" ><i class='bx bxs-user-plus'></i></a>
+    <a href="{{ route('showAddProd')}}" class="btn btn-primary mb-2" ><i class='bx bxs-user-plus'></i></a>
 
     <table class="table">
         <thead>
@@ -29,7 +29,11 @@
                         <button class="btn btn-warning"><i class="bx bxs-edit"></i></button>
                     </td>
                     <td> 
-                        <button class="btn btn-danger"><i class="bx bxs-trash"></i></button>
+                        <form action="{{route('deleteP' , $item->id)}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-danger"><i class="bx bxs-trash"></i></button>
+                        </form>
                     </td>
                 </tr> 
             @endforeach
