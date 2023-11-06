@@ -2,9 +2,8 @@
 
 @section('content')
     <h1 class="text-center text-success">Gestión de Suppliers</h1>
-    <a href="{{ route('viewAddSupplier') }}" class="btn btn-primary mb-2">
-        <i class='bx bxs-user-plus'></i> Agregar Supplier
-    </a>
+    <a href="{{ url('/Customer_form') }}" class="btn btn-primary mb-2" ><i class='bx bxs-user-plus'></i></a>
+
 
     <table class="table">
         <thead>

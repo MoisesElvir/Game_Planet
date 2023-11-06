@@ -1,17 +1,42 @@
 @extends('template')
 
 @section('content')
-    <form action="{{route('addSupplier')}}" method="POST" class="form">
-        @csrf
-        <label for="name">Name</label>
-        <input type="text" class="form-control" name="name">
+    <div class="containers">
+        <form action="{{ url('/addSupplier')}}" method="POST" class="form">
+            @csrf
+            <div class="wave-group">
+                <input required="" type="text" class="input" name="name" required>
+                <span class="bar"></span>
+                <label class="label">
+                <span class="label-char" style="--index: 0">N</span>
+                <span class="label-char" style="--index: 1">a</span>
+                <span class="label-char" style="--index: 2">m</span>
+                <span class="label-char" style="--index: 3">e</span>
+                </label>
+            </div>
+            <br>
+            <div class="wave-group">
+                <input required="" type="text" class="input" name="address" required>
+                <span class="bar"></span>
+                <label class="label">
+                <span class="label-char" style="--index: 0">A</span>
+                <span class="label-char" style="--index: 1">d</span>
+                <span class="label-char" style="--index: 2">d</span>
+                <span class="label-char" style="--index: 3">r</span>
+                <span class="label-char" style="--index: 4">r</span>
+                <span class="label-char" style="--index: 5">e</span>
+                <span class="label-char" style="--index: 6">s</span>
+                <span class="label-char" style="--index: 7">s</span>
+                </label>
+            </div>
 
-        <label for="adress">Adress</label>
-        <input type="text" class="form-control" name="address">
+            <label for="adress">Adress</label>
+            <input type="text" class="form-control" name="address">
 
-        <label for="phone">Phone</label>
-        <input type="text" class="form-control" name="phone">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control" name="phone">
 
-        <input type="submit" class="btn btn-primary" value="Add">
-    </form>
+            <input type="submit" class="btn btn-primary" value="Add">
+        </form>
+    </div>
 @endsection

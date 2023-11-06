@@ -10,7 +10,7 @@ class customerController extends Controller
 {
     public function index()
     {
-        $customers = Customer::select('*')->where('id_status', '=', 1)->get();
+        $customers = Customer::all();
         return view("pages.customers.customers_list",array( "customer"=>$customers));
     }
 

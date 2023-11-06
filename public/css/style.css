@@ -295,3 +295,12 @@ body{
     padding-top: 20px;
 }
 
+.containers {
+    width: 110%; /* Ancho del contenedor, ajusta según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+    padding: 20px; /* Espacio interno alrededor del contenedor */
+    background-color: #ffffffb6; /* Color de fondo del contenedor */
+    border: 1px solid #ccc; /* Borde del contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
