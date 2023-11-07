@@ -21,10 +21,12 @@
                     <td>{{ $item->name }} </td>
                     <td>{{ $item->description }} </td>
                     <td>{{ $item->price }} </td>
-                    <td>{{ $item->supplier_id }} </td>
-                    <td>{{ $item->image_id }} </td>
-                    <td>{{ $item->product_type_id }} </td>
-                    <td>{{ $item->brand_id }} </td>
+                    <td>{{ $item->supplier }} </td>
+                    <td>
+                        <img src="{{ $item->image }}" alt="{{ $item->name }}" style="max-width: 100px;">
+                    </td>
+                    <td>{{ $item->productType }} </td>
+                    <td>{{ $item->brand}} </td>
                     <td> 
                         <button class="btn btn-warning"><i class="bx bxs-edit"></i></button>
                     </td>

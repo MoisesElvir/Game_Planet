@@ -13,7 +13,10 @@ class productController extends Controller
 {
     public function index()
     {
-        $products = Product::all();
+        $products = Product::join('brand', 'product.brand_id', '=', 'brand.id')
+        ->join('product_type', 'product.product_type_id', '=', 'product_type.id')
+        ->join('supplier', 'product.supplier_id', '=', 'supplier.id')
+        ->select('product.*', 'brand.name as brand', 'product_type.name as productType', 'supplier.name as supplier')->get();
         return view("pages.product.product_list",array( "product"=>$products));
     }
 
@@ -57,9 +60,9 @@ class productController extends Controller
         $product->description = $request->post('description');
         $product->price = $request->post('price');
         $product->image = $request->post('image');
-        $product->supplier = $request->post('supplier');
-        $product->brand = $request->post('brand');
-        $product->produit = $request->post('produit');
+        $product->supplier_id = $request->post('supplier');
+        $product->brand_id = $request->post('brand');
+        $product->product_type_id = $request->post('categorie');
         $product->save();
 
         return redirect()->route('productLIst');
