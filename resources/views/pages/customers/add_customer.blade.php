@@ -1,9 +1,9 @@
 @extends('template')
 
 @section('content')
-    <a href="{{ url('/Customers_List') }}" class="btn btn-outline-secondary mb-2" ><i class='bx bxs-left-arrow'></i>Return</a>
-    <h1>User Registration</h1>
-
+    <h1>Customer Registration</h1>
+    <br>
+    <img class="mario">
     <div class="containers">
         <form id="registrationForm" action="{{ route('saveCustomer') }}" method="POST">
             @csrf
@@ -77,7 +77,7 @@
             </div>
             <br>
             <div class="wave-group">
-                <input required="" type="text" class="input" name="password" required>
+                <input required="" type="Password" class="input" name="password" required>
                 <span class="bar"></span>
                 <label class="label">
                 <span class="label-char" style="--index: 0">P</span>
@@ -92,8 +92,9 @@
                 </label>
             </div>
             <br>
-            <button class="button" type="submit"  value="Submit"> Button
+            <center><button class="button" type="submit"  value="Submit"> Submit
             </button>
+            </button></center>
         </form>
     </div>
 @endsection  

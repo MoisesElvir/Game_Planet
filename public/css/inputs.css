@@ -158,42 +158,6 @@
   padding: 5px 10px;
 }
 
-.modal-content {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.modal-title {
-  margin: 0;
-  font-size: 24px;
-}
-
-.modal-body {
-  padding: 20px;
-}
-
-.modal-body label {
-  font-weight: bold;
-}
-
-.modal-body input {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-.modal-body .form-check {
-  margin-bottom: 10px;
-}
-
-.modal-footer {
-  padding: 10px 20px;
-  text-align: right;
-}
-
 .btn-primary, .btn-danger, .btn-warning {
   padding: 5px 10px;
   border: none;

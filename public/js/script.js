@@ -52,3 +52,16 @@ document.querySelector('.toggle-products').addEventListener('click', function() 
         }
     });
 });
+
+///////MODAL////////
+document.addEventListener("DOMContentLoaded", function() {
+    const showModalButton = document.querySelector(".show-modal-button");
+    const customModal = document.querySelector(".custom-modal");
+    const closeModalButton = document.getElementById("closeModal");
+    showModalButton.addEventListener("click", function() {
+        customModal.style.display = "block";
+    });
+    closeModalButton.addEventListener("click", function() {
+        customModal.style.display = "none";
+    });
+});

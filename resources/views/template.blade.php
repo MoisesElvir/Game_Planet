@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/inputs.css') }}">
     <link rel="stylesheet" href="{{ asset('css/rbtn.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
+
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>

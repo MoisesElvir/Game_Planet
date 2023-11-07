@@ -18,13 +18,6 @@
             <span class="tooltip">Product</span>
         </li>
         <li class="hidden2">
-            <a href="{{ url ('/image_list') }}">
-                <i class='bx bx-images'></i>
-                <span class="links_name">Images</span>
-            </a>
-            <span class="tooltip">Images</span>
-        </li>
-        <li class="hidden2">
             <a href="{{ url ('/Product_Type_List') }}">
                 <i class='bx bxs-dashboard'></i>
                 <span class="links_name">Product Type</span>
