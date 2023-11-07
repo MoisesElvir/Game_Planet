@@ -24,13 +24,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/template', function () {
     return view('template');   
 });
 
 Route::get('/image_list', [imageController::class,'index']);
 
 Route::get('/Product_Type_List', [product_typeController::class,'index'])->name('categorieList');
+
+Route::get('/Product_Type', [product_typeController::class,'getForm'])->name('PTregistrationForm');
+Route::put('/updateCategorie/{id}', [product_typeController::class,'update'])->name('updateCategorie');
 
 Route::get('/Brands_List', [brandController::class,'index'])->name('brandList');
 

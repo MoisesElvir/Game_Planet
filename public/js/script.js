@@ -54,14 +54,27 @@ document.querySelector('.toggle-products').addEventListener('click', function() 
 });
 
 ///////MODAL////////
-document.addEventListener("DOMContentLoaded", function() {
-    const showModalButton = document.querySelector(".show-modal-button");
-    const customModal = document.querySelector(".custom-modal");
-    const closeModalButton = document.getElementById("closeModal");
-    showModalButton.addEventListener("click", function() {
-        customModal.style.display = "block";
+document.addEventListener("DOMContentLoaded", function () {
+    // Obtén todos los botones que abren modales
+    const showModalButtons = document.querySelectorAll(".show-modal-button");
+
+    // Obtén todos los modales
+    const customModals = document.querySelectorAll(".custom-modal");
+
+    showModalButtons.forEach(function (showModalButton, index) {
+        showModalButton.addEventListener("click", function () {
+            // Muestra el modal correspondiente
+            customModals[index].style.display = "block";
+        });
     });
-    closeModalButton.addEventListener("click", function() {
-        customModal.style.display = "none";
+
+    // Agrega un controlador de eventos para cerrar todos los modales al hacer clic en el botón de cerrar
+    const closeModalButtons = document.querySelectorAll(".close-modal-button");
+    closeModalButtons.forEach(function (closeModalButton) {
+        closeModalButton.addEventListener("click", function () {
+            customModals.forEach(function (customModal) {
+                customModal.style.display = "none";
+            });
+        });
     });
 });

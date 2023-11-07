@@ -14,6 +14,9 @@ class product_typeController extends Controller
         return view("pages.product_type.product_t_list",array( "productt"=>$product_t));
     }
 
+    public function getForm(){
+        return view('pages.product_type.add_product_type');} 
+
     public function saveCategorie(Request $request)
     {
         $categorie = new Product_Type();
