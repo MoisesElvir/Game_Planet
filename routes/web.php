@@ -44,12 +44,19 @@ Route::get('/Supplier_List', [supplierController::class,'index'])->name('supplie
 
 Route::get('/Product_List', [productController::class,'index'])->name('productList');
 
+// branch
 Route::get('/Branch_List', [branchController::class,'index']);
+Route::get('/Branch_form', [branchController::class,'getForm'])->name('registrationForm');
+Route::post('/Save_branch', [branchController::class,'addBranch'])->name('saveBranch');
+Route::put('/update_Branch/{id}', [branchController::class,'update'])->name('updateBranch');
+Route::put('/disable_Branch/{id}', [branchController::class,'destroy'])->name('branchDisabled');
 
 // Employees
 Route::get('/Employees_List', [employeesController::class,'index']);
 Route::get('/Employee_form', [employeesController::class,'getForm'])->name('registrationForm');
 Route::post('/Save_employee', [employeesController::class,'addEmployee'])->name('saveEmployee');
+Route::put('/update_employee/{id}', [employeesController::class,'update'])->name('updateEmployee');
+Route::put('/disable_employee/{id}', [employeesController::class,'destroy'])->name('employeeDisabled');
 
 // Customers
 Route::get('/Customers_List', [customerController::class,'index']);

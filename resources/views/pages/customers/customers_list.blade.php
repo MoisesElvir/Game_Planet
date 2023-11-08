@@ -28,7 +28,7 @@
                     <td>{{ $item->email }} </td>
                     <td>{{ $item->password }} </td>
                     <td> 
-                        <button class="edit" data-bs-toggle="modal"       data-bs-target="#exampleModal{{ $item->id }}">
+                        <button class="edit" data-bs-toggle="modal" data-bs-target="#exampleModal{{ $item->id }}">
                             <span class="transition"></span>
                             <span class="gradient"></span>
                             <span class="label"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none"><path fill="currentColor" fillRule="evenodd" d="M17.586 2a2 2 0 0 1 2.828 0L22 3.586a2 2 0 0 1 0 2.828L20.414 8L16 3.586L17.586 2zm-3 3l-5 5A2 2 0 0 0 9 11.414V13a2 2 0 0 0 2 2h1.586A2 2 0 0 0 14 14.414l5-5L14.586 5z" clipRule="evenodd"/><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 14H5a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h14a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-4"/></g></svg></span>
@@ -103,19 +103,19 @@
                                 <br>
                                 <div class="radio-container">
                                     <div class="radio-wrapper">
-                                      <label class="radio-button">
-                                        <input required="" name="gender" id="Masculine" value="Masculine" type="radio" required>
-                                        <span class="radio-checkmark"></span>
-                                        <span class="radio-label">Male</span>
-                                      </label>
+                                        <label class="radio-button">
+                                            <input required="" name="gender" id="Male" value="Male" type="radio" required>
+                                            <span class="radio-checkmark"></span>
+                                            <span class="radio-label">Male</span>
+                                        </label>
                                     </div>
-                                  
+                            
                                     <div class="radio-wrapper">
-                                      <label class="radio-button">
-                                        <input name="gender" id="Feminine" value="Feminine" type="radio">
-                                        <span class="radio-checkmark"></span>
-                                        <span class="radio-label">Female</span>
-                                      </label>
+                                        <label class="radio-button">
+                                            <input name="gender" id="Female" value="Female" type="radio">
+                                            <span class="radio-checkmark"></span>
+                                            <span class="radio-label">Female</span>
+                                        </label>
                                     </div>
                                 </div>
                                 <br>              

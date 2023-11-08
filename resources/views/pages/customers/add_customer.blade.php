@@ -48,19 +48,19 @@
             <br>
             <div class="radio-container">
                 <div class="radio-wrapper">
-                  <label class="radio-button">
-                    <input name="gender" id="Masculine" value="Masculine" type="radio">
-                    <span class="radio-checkmark"></span>
-                    <span class="radio-label">Male</span>
-                  </label>
+                    <label class="radio-button">
+                        <input required="" name="gender" id="Male" value="Male" type="radio" required>
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">Male</span>
+                    </label>
                 </div>
-              
+        
                 <div class="radio-wrapper">
-                  <label class="radio-button">
-                    <input name="gender" id="Feminine" value="Feminine" type="radio">
-                    <span class="radio-checkmark"></span>
-                    <span class="radio-label">Female</span>
-                  </label>
+                    <label class="radio-button">
+                        <input name="gender" id="Female" value="Female" type="radio">
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">Female</span>
+                    </label>
                 </div>
             </div>
             <br>              
