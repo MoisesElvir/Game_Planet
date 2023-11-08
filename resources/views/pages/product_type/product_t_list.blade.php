@@ -1,10 +1,7 @@
 @extends('template')
 
 @section('content')
-    <h1 class="text-center text-success">Gestión de Tipos de Productos</h1>
-    <a href="#" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#addProductTypeModal">
-        <i class='bx bxs-user-plus'></i>
-    </a>
+    <h1 class="text-center text-success">Management Of Type Products</h1>
 
     <button class="create" onclick="window.location.href = '{{ url('/Product_Type') }}'">
         <span>
@@ -23,12 +20,22 @@
                 <td>{{ $item->name }}</td>
                 <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editProductTypeModal{{ $item->id }}"><i class="bx bxs-edit"></i></button>
-                </td>
-                <td>
-                    <form action="{{ route('deleteCategorie', $item->id) }}" method="POST">
+                    <br>
+                    <br>
+                    <form class="disableCx" action="{{ route('deleteCategorie', $item->id) }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button class="btn btn-danger"><i class="bx bxs-trash"></i></button>
+                        <button type="submit">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M7 21q-.825 0-1.413-.588T5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.588 1.413T17 21H7Zm2-4h2V8H9v9Zm4 0h2V8h-2v9Z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
                     </form>
                 </td>
             </tr>

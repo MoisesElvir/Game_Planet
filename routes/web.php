@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/template', function () {
+Route::get('', function () {
     return view('template');   
 });
 
@@ -72,6 +72,7 @@ Route::delete('/deleteProduct/{id}', [productController::class,'deleteProduct'])
 //route of view add supplier
 Route::get('/viewAddSupplier', [supplierController::class, 'viewAdd'])->name('viewAddSupplier');
 //route for add supplier
+Route::get('/Supplier_form', [supplierController::class,'viewAdd'])->name('registrationForm');
 Route::post('/addSupplier', [supplierController::class, 'addSupplier'])->name('addSupplier');
 //delete supplier
 Route::delete('/deleteSupplier/{id}', [supplierController::class,'deleteSupplier'])->name('deleteSupplier');
@@ -87,6 +88,7 @@ Route::delete('/deleteCategorie/{id}', [product_typeController::class,'deleteCat
 Route::put('/updateCategorie/{id}', [product_typeController::class,'updateCategorie'])->name('updateCategorie');
 
 //route for add brand
+Route::get('/Brand_form', [brandController::class,'getForm'])->name('registrationForm');
 Route::post('/addBrand', [brandController::class, 'addBrand'])->name('addBrand');
 //delete brand
 Route::delete('/deleteBrand/{id}', [brandController::class, 'deleteBrand'])->name('deleteBrand');

@@ -14,6 +14,10 @@ class brandController extends Controller
         return view("pages.brand.brand_list", array( "brand"=>$brands));
     }
 
+    public function getForm(){
+        return view('pages.brand.add_brand');
+    }
+
     public function toAdd()
     {
         $brands = Brand::all();
