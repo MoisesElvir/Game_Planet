@@ -15,12 +15,13 @@ h1 {
     left: 50%;
     font-size: 30px;
     transform: translateX(-10%);
-    transform: translateY(-200%);
+    transform: translateY(-100%);
     font-weight: 900;
     color: #ffffff;
     text-align: center;
     font-size: 45px;
     margin: auto;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .mario {
@@ -335,6 +336,28 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
 }
 
+/*style table & tr*/
+#superior {
+    border-radius: 50px;
+    border: 2px solid;
+    background-color: rgba(25, 39, 22, 0.5);
+}
+th{
+    color: #ffffff;
+}
+tr{
+    border: 2px solid;
+}
+td{
+    border: 2px solid;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+tbody{
+     /*background-color: rgba(0, 185, 129, 0.6);*/
+    background-color: rgba(64, 224, 208, 0.4);
+     border-radius: 20%;
+}
 
 .create {
     border: 2px solid #192716;
@@ -357,7 +380,7 @@ body{
     background-color: #192716;
     border: 2px solid #49a280;
    }
-
+  /*buttons editar y eliminar*/
    .edit {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 17px;
@@ -369,6 +392,7 @@ body{
     position: relative;
     overflow: hidden;
     border-radius: 0.6em;
+    cursor: pointer;
   }
   
   .gradient {
@@ -420,6 +444,7 @@ body{
     position: relative;
     overflow: hidden;
     border-radius: 0.6em;
+    cursor: pointer;
   }
   
   .gradient {
