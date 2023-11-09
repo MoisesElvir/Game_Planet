@@ -33,7 +33,6 @@
                 <span class="label-char" style="--index: 1">a</span>
                 <span class="label-char" style="--index: 2">t</span>
                 <span class="label-char" style="--index: 3">e</span>
-                
                 </label>
             </div>
             <br>

@@ -54,7 +54,6 @@
                         <span class="radio-label">Male</span>
                     </label>
                 </div>
-            
                 <div class="radio-wrapper">
                     <label class="radio-button">
                         <input name="gender" id="Female" value="Female" type="radio">
@@ -62,8 +61,7 @@
                         <span class="radio-label">Female</span>
                     </label>
                 </div>
-            </div>
-            <br>              
+            </div>             
             <div class="wave-group">
                 <input type="text" class="input" name="email" required>
                 <span class="bar"></span>
@@ -88,7 +86,6 @@
                 <span class="label-char" style="--index: 3">o</span>
                 <span class="label-char" style="--index: 3">r</span>
                 <span class="label-char" style="--index: 3">d</span>
-
                 </label>
             </div>
             <br>
@@ -99,8 +96,6 @@
                     @endforeach
                 </select>
             </div>
-
-
             <br>
             <button class="button" type="submit"  value="Submit"> Button
             </button>

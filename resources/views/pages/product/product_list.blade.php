@@ -2,8 +2,7 @@
 
 @section('content')
     <h1 class="text-center text-success " >Gestion de Product</h1>
-    <a href="{{ route('showAddProd')}}" class="btn btn-primary mb-2" ><i class='bx bxs-user-plus'></i></a>
-    <button class="create" onclick="window.location.href = '{{ url('/Supplier_form') }}'">
+    <button class="create" onclick="window.location.href = '{{ url('/showAddProduct') }}'">
         <span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                 <path fill="none" d="M0 0h24v24H0z"></path>
