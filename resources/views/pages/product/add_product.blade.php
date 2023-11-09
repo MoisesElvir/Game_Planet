@@ -1,25 +1,73 @@
 @extends('template')
 
 @section('content')
+<h1 class="text-center">ADD PRODUCT</h1>
+<br>
+<img class="">
+<div class="containers">
     <form action="{{ route('addP')}}" method="POST" class="form">
         @csrf
-        <h1 class="text-center">ADD PRODUCT</h1>
-        <label for="name">Product Name</label>
-        <input type="text" class="form-control" name="name">
-        <label for="description">Product Description</label>
-        <input type="text" class="form-control" name="description">
-        <label for="price">Price</label>
-        <input type="double" class="form-control" name="price">
-        <label for="image">Image</label>
-        <input type="text" class="form-control" name="image">
-
-        <label for="supplier" class="form-control">Select Supplier</label>
-        <select name="supplier" id="" class="form-control">
+        <br>
+        <div class="wave-group">
+            <input required="" type="text" class="input" name="name" required>
+            <span class="bar"></span>
+            <label class="label">
+            <span class="label-char" style="--index: 0">N</span>
+            <span class="label-char" style="--index: 1">a</span>
+            <span class="label-char" style="--index: 2">m</span>
+            <span class="label-char" style="--index: 3">e</span>
+            </label>
+        </div>     
+        <br>
+        <div class="wave-group">
+            <input required="" type="text" class="input" name="description" required>
+            <span class="bar"></span>
+            <label class="label">
+            <span class="label-char" style="--index: 0">D</span>
+            <span class="label-char" style="--index: 1">e</span>
+            <span class="label-char" style="--index: 2">s</span>
+            <span class="label-char" style="--index: 3">c</span>
+            <span class="label-char" style="--index: 4">r</span>
+            <span class="label-char" style="--index: 5">i</span>
+            <span class="label-char" style="--index: 6">p</span>
+            <span class="label-char" style="--index: 7">t</span>
+            <span class="label-char" style="--index: 8">i</span>
+            <span class="label-char" style="--index: 9">o</span>
+            <span class="label-char" style="--index: 10">n</span>
+            </label>
+        </div> 
+        <br>
+        <div class="wave-group">
+            <input required="" type="text" class="input" name="price" required>
+            <span class="bar"></span>
+            <label class="label">
+            <span class="label-char" style="--index: 0">P</span>
+            <span class="label-char" style="--index: 1">r</span>
+            <span class="label-char" style="--index: 2">i</span>
+            <span class="label-char" style="--index: 3">c</span>
+            <span class="label-char" style="--index: 4">e</span>
+            </label>
+        </div>  
+        <br>
+        <div class="wave-group">
+            <input required="" type="text" class="input" name="image" required>
+            <span class="bar"></span>
+            <label class="label">
+            <span class="label-char" style="--index: 0">I</span>
+            <span class="label-char" style="--index: 1">m</span>
+            <span class="label-char" style="--index: 2">a</span>
+            <span class="label-char" style="--index: 3">g</span>
+            <span class="label-char" style="--index: 4">e</span>
+            </label>
+        </div>
+        <br>
+        <select name="supplier" id="" class="custom-select">
+            <option value="" >Select Supplier</option>
             @foreach ($supplier as $item)
                 <option value="{{$item->id}}">{{$item->name}}</option>
             @endforeach
         </select>
-
+        <br>
         <div class="row container">
             <div class="col-md-6">
                 <label for="brand">Select Brand</label>
@@ -29,6 +77,7 @@
                     @endforeach
                 </select>
             </div>
+            <br>
             <div class="col-md-6">
                 <label for="categporie">Select Categorie</label>
                 <select name="categorie" id="" class="form-control">
@@ -42,4 +91,5 @@
         <input type="submit" class="btn btn-primary mt-4" value="Add Product">
         
     </form>
+</div>
 @endsection

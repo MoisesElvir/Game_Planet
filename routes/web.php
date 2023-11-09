@@ -66,8 +66,16 @@ Route::put('/update_customer/{id}', [customerController::class,'update'])->name(
 Route::put('/disable_customer/{id}', [customerController::class,'destroy'])->name('customerDisabled');
 
 Route::get('/Buy_List', [buyController::class,'index']);
+Route::get('/Buy_form', [buyController::class,'getForm'])->name('registrationForm');
+Route::post('/Save_buy', [buyController::class,'addBuy'])->name('saveBuy');
+Route::put('/update_buy/{id}', [buyController::class,'update'])->name('updateBuy');
+Route::put('/disable_buy/{id}', [buyController::class,'delete'])->name('deleteBuy');
 
 Route::get('/Bill_List', [billController::class,'index']);
+Route::get('/Bill_form', [billController::class,'getForm'])->name('registrationForm');
+Route::post('/Save_bill', [billController::class,'addBill'])->name('saveBill');
+Route::put('/update_bill/{id}', [billController::class,'update'])->name('updateBill');
+Route::put('/disable_bill/{id}', [billController::class,'delete'])->name('deleteBill');
 
 //route for view add product
 Route::get('/showAddProduct', [productController::class, 'showAdd'])->name('showAddProd');

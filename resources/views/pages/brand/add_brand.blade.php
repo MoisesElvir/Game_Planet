@@ -3,7 +3,7 @@
 @section('content')
 <h1>Brand Registration</h1>
 <br>
-<img class="mario">
+<img class="">
 <div class="containers">
     <form id="resgistrationForm" action="{{ route('addBrand') }}" method="POST">
         @csrf
