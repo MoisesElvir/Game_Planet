@@ -35,6 +35,17 @@ h1 {
     background-size: contain;
 }
 
+.steve {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    margin-top: 100px; /* Mover el elemento hacia abajo */
+    right: 100px;
+    background-image: url('../images/MN1.png');
+    border: none; /* Agregar esta propiedad para quitar las líneas */
+    background-size: contain;
+}
+
 .sidebar{
     position: fixed;
     left: 0;
@@ -484,3 +495,13 @@ tbody{
   button:active {
     transform: scale(0.97);
   }
+
+  .custom-select {
+    /* Agrega tus estilos personalizados aquí */
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    width: 90%;
+    font-family: poppins;
+}
