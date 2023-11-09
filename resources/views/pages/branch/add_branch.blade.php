@@ -3,7 +3,7 @@
 @section('content')
     <h1>Create a Branch</h1>
 
-    
+     
     <div class="containers">
         <form id="registrationForm" action="{{ route('saveBranch') }}" method="POST">
             @csrf
@@ -44,6 +44,7 @@
                 <span class="label-char" style="--index: 3">e</span>
                 </label>
             </div>
+            
         
             <br>
             <div class="wave-group">
@@ -53,7 +54,7 @@
                     @endforeach
                 </select>
             </div>
-        </div>
+         <!--</div>-->
             <br>
             <center><button class="button" type="submit"  value="Submit"> Submit
             </button>

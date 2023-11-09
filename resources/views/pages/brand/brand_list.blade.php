@@ -10,7 +10,7 @@
     </button>
 
     <table class="table">
-        <thead>
+        <thead id="superior">
             <th>Name</th>
             <th>Actions</th>
         </thead>

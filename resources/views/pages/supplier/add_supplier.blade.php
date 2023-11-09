@@ -46,7 +46,7 @@
             <center><button class="button" type="submit"  value="Submit"> Submit
             </button>
             </button></center>
-            <input type="submit" class="btn btn-primary" value="Add">
+            <!--<input type="submit" class="btn btn-primary" value="Add">-->
         </form>
     </div>
 @endsection

@@ -7,11 +7,19 @@
 <div class="containers">
     <form id="PTresgistrationForm" action="{{ route('saveCategorie') }}" method="POST">
         @csrf
-        <div class="form-group">
-            <label for="productTypeName">Name:</label>
-            <input type="text" name="name" class="form-control">
+        <div class="wave-group">
+            <input required="" type="text" class="input" name="name" required>
+            <span class="bar"></span>
+            <label class="label">
+               <span class="label-char" style="--index: 0">N</span>
+               <span class="label-char" style="--index: 1">a</span>
+               <span class="label-char" style="--index: 2">m</span>
+               <span class="label-char" style="--index: 3">e</span>
+            </label>
         </div>
-        <button type="submit" class="btn btn-primary">Add</button>
+        <br>
+        <center><button class="button" type="submit"  value="Submit"> Submit
+            </button>
     </form>
 </div>
 @endsection

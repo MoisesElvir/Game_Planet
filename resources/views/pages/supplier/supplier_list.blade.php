@@ -12,7 +12,7 @@
         </span>
     </button>
     <table class="table">
-        <thead>
+        <thead id="superior">
             <th>Name</th>
             <th>Address</th>
             <th>Phone</th>

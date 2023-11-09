@@ -183,3 +183,17 @@
   background-color: #6c757d;
   color: #fff;
 }
+/*###produc-type##*/
+.nameProduct{
+  height: 70px;
+}
+.label-char{
+  color: #fff;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.modal-content{
+  background-color: rgba(64, 224, 208, 0.4);
+ margin: -10%;
+ padding: 10%;
+border: 2px solid #192716;
+}
