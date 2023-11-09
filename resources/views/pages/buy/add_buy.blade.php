@@ -39,22 +39,21 @@
                 </label>
             </div>
             <br>
-            <div class="wave-group">
-                <select name="id_product" id="" class="form-control">
-                    @foreach ($product as $item)
-                        <option value="{{$item->id}}">{{$item->name}}</option>
-                    @endforeach
-                </select>
-            </div>
+            <select name="supplier" id="" class="custom-select">
+                <option value="" >Select Product</option>
+                @foreach ($product as $item)
+                    <option value="{{$item->id}}">{{$item->name}}</option>
+                @endforeach
+            </select>
             <br>
-            <div class="wave-group">
-                <select name="id_customer" id="" class="form-control">
-                    @foreach ($customer as $item)
-                        <option value="{{$item->id}}">{{$item->name}}</option>
-                    @endforeach
-                </select>
-            </div>
-        </div>
+            <br>
+            <select name="supplier" id="" class="custom-select">
+                <option value="" >Select Customer</option>
+                @foreach ($customer as $item)
+                    <option value="{{$item->id}}">{{$item->name}}</option>
+                @endforeach
+            </select>
+            <br>
             <br>
             <center><button class="button" type="submit"  value="Submit"> Submit
             </button>
