@@ -61,6 +61,7 @@
             </label>
         </div>
         <br>
+        <br>
         <select name="supplier" id="" class="custom-select">
             <option value="" >Select Supplier</option>
             @foreach ($supplier as $item)
@@ -68,26 +69,23 @@
             @endforeach
         </select>
         <br>
-        <div class="row container">
-            <div class="col-md-6">
-                <label for="brand">Select Brand</label>
-                <select name="brand" id="" class="form-control">
-                    @foreach ($brand as $item)
-                        <option value="{{$item->id}}">{{$item->name}}</option>
-                    @endforeach
-                </select>
-            </div>
-            <br>
-            <div class="col-md-6">
-                <label for="categporie">Select Categorie</label>
-                <select name="categorie" id="" class="form-control">
-                    @foreach ($categorie as $item)
-                        <option value="{{$item->id}}">{{$item->name}}</option>
-                    @endforeach
-                </select>
-            </div>
-        </div>
-
+        <br>
+        <select name="supplier" id="" class="custom-select">
+            <option value="" >Select Brand</option>
+            @foreach ($brand as $item)
+                <option value="{{$item->id}}">{{$item->name}}</option>
+            @endforeach
+        </select>
+        <br>
+        <br>
+        <select name="supplier" id="" class="custom-select">
+            <option value="" >Select Categorie</option>
+            @foreach ($categorie as $item)
+                <option value="{{$item->id}}">{{$item->name}}</option>
+            @endforeach
+        </select>
+        <br>
+        <br>
         <input type="submit" class="btn btn-primary mt-4" value="Add Product">
         
     </form>

@@ -89,21 +89,21 @@
                                     </label>
                                 </div>
                                 <br>
-                                <div class="wave-group">
-                                    <select name="id_buy" id="" class="form-control">
-                                        @foreach ($buy as $item)
-                                            <option value="{{$item->id}}">{{$item->name}}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
+                                <select name="supplier" id="" class="custom-select">
+                                    <option value="" >Select buy</option>
+                                    @foreach ($buy as $item)
+                                        <option value="{{$item->id}}">{{$item->name}}</option>
+                                    @endforeach
+                                </select>
                                 <br>
-                                <div class="wave-group">
-                                    <select name="id_employee" id="" class="form-control">
-                                        @foreach ($employee as $item)
-                                            <option value="{{$item->id}}">{{$item->name}}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
+                                <br>
+                                <select name="supplier" id="" class="custom-select">
+                                    <option value="" >Select Employee</option>
+                                    @foreach ($employee as $item)
+                                        <option value="{{$item->id}}">{{$item->name}}</option>
+                                    @endforeach
+                                </select>
+                                <br>
                                 <br>
                             </div>
                             <div class="modal-footer">

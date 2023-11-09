@@ -95,13 +95,12 @@
                                     </label>
                                 </div>
                                 <br>              
-                                <div class="wave-group">
-                                    <select name="id_product" id="" class="form-control">
-                                        @foreach ($product as $item)
-                                            <option value="{{$item->id}}">{{$item->name}}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
+                                <select name="supplier" id="" class="custom-select">
+                                    <option value="" >Select Product</option>
+                                    @foreach ($product as $item)
+                                        <option value="{{$item->id}}">{{$item->name}}</option>
+                                    @endforeach
+                                </select>
                                 <br>
                             </div>
                             <div class="modal-footer">
