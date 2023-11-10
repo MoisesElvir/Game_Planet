@@ -66,7 +66,6 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h1 class="modal-title fs-5" id="exampleModalLabel">Edit info</h1>
-                                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" id="closeModal"></button>
                             </div>
 
                             <form action="{{ route('updateSupplier', $item->id) }}" method="POST">
@@ -74,19 +73,8 @@
                                 @method('PUT')
 
                                 <div class="modal-body">
-                                    <h2>Edit Supplier
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                                            <g fill="none">
-                                                <path fill="currentColor" fillRule="evenodd"
-                                                    d="M17.586 2a2 2 0 0 1 2.828 0L22 3.586a2 2 0 0 1 0 2.828L20.414 8L16 3.586L17.586 2zm-3 3l-5 5A2 2 0 0 0 9 11.414V13a2 2 0 0 0 2 2h1.586A2 2 0 0 0 14 14.414l5-5L14.586 5z"
-                                                    clipRule="evenodd"></path>
-                                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
-                                                    strokeWidth="2"
-                                                    d="M6 14H5a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h14a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-4">
-                                                </path>
-                                            </g>
-                                        </svg>
-                                    </h2>
+                                    <h2><center>Edit Brand</center></h2>
+                                    <br>
                                     <br>
                                     <div class="wave-group">
                                         <input required="" type="text" class="input" name="name" value="{{ $item->name }}"
@@ -130,19 +118,11 @@
                                     <br>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-primary">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
-                                            <g fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="1.5">
-                                                <path
-                                                    d="M2 4a2 2 0 0 1 2-2h1.829a1 1 0 0 1 .658.293L13 10.585l3.708-3.707a1 1 0 0 1 1.414 0L21.586 9.586A1 1 0 0 1 22 10a1 1 0 0 1-1 1a1 1 0 0 1-.707-.293L13 3.415l-4.293 4.293a1 1 0 0 1-1.414 0L3.172 5.293A1 1 0 0 1 2.514 5.586A1 1 0 0 1 2 5H1a1 1 0 0 1-1-1a1 1 0 0 1 .293-.707A1 1 0 0 1 2 3z">
-                                                </path>
-                                                <path
-                                                    d="M13 2v10a2 2 0 0 0 2 2h8M2 5l20 0M6 16l-4-4a1 1 0 0 1 0-1.414a1 1 0 0 1 1.414 0L6 14.586l7.293-7.293a1 1 0 0 1 1.414 0L21.586 17.586a1 1 0 0 1-1.414 0L13 11.415l-6.293 6.293a1 1 0 0 1-1.414 0L3 16.586a1 1 0 0 1 0-1.414a1 1 0 0 1 1.414 0l4 4">
-                                                </path>
-                                            </g>
-                                        </svg>
-                                    </button>
+                                    <div class="modal-footer">
+                                        <center><button class="button" type="submit"  value="Submit"> Submit
+                                        </button>
+                                        </button></center>                                
+                                    </div>
                                 </div>
                             </form>
                         </div>

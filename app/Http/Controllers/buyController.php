@@ -21,15 +21,15 @@ class buyController extends Controller
     public function getForm(){
         $products = Product::all();
         $customers = Customer::all();
-        return view('pages.buy.add_buy', array("product" => $products), array("customer" => $customers));
+        return view('pages.buy.add_buy', ["product" => $products, "customer" => $customers]);
     }
 
     public function addBuy(Request $request){
         $buy = new Buy();
         $buy->quantity = $request->post('quantity');
         $buy->payment_method = $request->post('payment_method');
-        $buy->id_customer = $request->post('id_customer');
-        $buy->id_product = $request->post('id_product');
+        $buy->customers = $request->post('customer');
+        $buy->products = $request->post('product');
 
         $buy->save();
 

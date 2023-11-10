@@ -39,7 +39,7 @@
                 </label>
             </div>
             <br>
-            <select name="supplier" id="" class="custom-select">
+            <select name="product" id="" class="custom-select">
                 <option value="" >Select Product</option>
                 @foreach ($product as $item)
                     <option value="{{$item->id}}">{{$item->name}}</option>
@@ -47,7 +47,7 @@
             </select>
             <br>
             <br>
-            <select name="supplier" id="" class="custom-select">
+            <select name="customer" id="" class="custom-select">
                 <option value="" >Select Customer</option>
                 @foreach ($customer as $item)
                     <option value="{{$item->id}}">{{$item->name}}</option>

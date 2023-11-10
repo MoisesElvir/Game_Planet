@@ -38,7 +38,7 @@ Route::get('/cerrarSesion', [loginController::class, 'cerrarSesion'])->name('cer
 Route::get('/Product_Type_List', [product_typeController::class,'index'])->name('categorieList');
 Route::get('/Product_Type', [product_typeController::class,'getForm'])->name('PTregistrationForm');
 Route::post('/saveCategorie', [product_typeController::class, 'saveCategorie'])->name('saveCategorie');
-Route::put('/updateCategorie/{id}', [product_typeController::class,'update'])->name('updateCategorie');
+Route::put('/updateCategorie/{id}', [product_typeController::class,'updateCategorie'])->name('UpdateCategorie');
 Route::delete('/deleteCategorie/{id}', [product_typeController::class,'deleteCategorie'])->name('deleteCategorie');
 
 // branch
@@ -95,4 +95,5 @@ Route::put('/updateSupplier/{id}', [supplierController::class,'updateSupplier'])
 Route::get('/Product_List', [productController::class,'index'])->name('productList');
 Route::get('/showAddProduct', [productController::class, 'showAdd'])->name('showAddProd');
 Route::post('/addProduct', [productController::class, 'addProduct'])->name('addP');
+Route::put('/updateProduct/{id}', [productController::class, 'updateProduct'])->name('updateP');
 Route::delete('/deleteProduct/{id}', [productController::class,'deleteProduct'])->name('deleteP');

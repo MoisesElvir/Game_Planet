@@ -89,17 +89,17 @@
                                     </label>
                                 </div>
                                 <br>
-                                <select name="supplier" id="" class="custom-select">
+                                <select name="id_buy" id="" class="custom-select">
                                     <option value="" >Select buy</option>
-                                    @foreach ($buy as $item)
+                                    @foreach ($bill as $item)
                                         <option value="{{$item->id}}">{{$item->name}}</option>
                                     @endforeach
                                 </select>
                                 <br>
                                 <br>
-                                <select name="supplier" id="" class="custom-select">
+                                <select name="id_employee" id="" class="custom-select">
                                     <option value="" >Select Employee</option>
-                                    @foreach ($employee as $item)
+                                    @foreach ($bill as $item)
                                         <option value="{{$item->id}}">{{$item->name}}</option>
                                     @endforeach
                                 </select>

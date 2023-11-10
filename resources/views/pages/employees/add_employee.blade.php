@@ -1,7 +1,6 @@
 @extends('template')
 
 @section('content')
-    <a href="{{ url('/Employees_List') }}" class="btn btn-outline-secondary mb-2" ><i class='bx bxs-left-arrow'></i>Return</a>
     <h1>Add a New Employee</h1>
 
     <div class="containers">
@@ -75,7 +74,7 @@
             </div>
             <br>
             <div class="wave-group">
-                <input required="" type="text" class="input" name="password" required>
+                <input required="" type="password" class="input" name="password" required>
                 <span class="bar"></span>
                 <label class="label">
                 <span class="label-char" style="--index: 0">P</span>
@@ -97,8 +96,8 @@
                 </select>
             </div>
             <br>
-            <button class="button" type="submit"  value="Submit"> Button
-            </button>
+            <center><button class="button" type="submit"  value="Submit"> Submit
+            </button></center>
         </form>
     </div>
 @endsection  

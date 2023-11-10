@@ -49,13 +49,13 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Brand</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                             </div>
                             <form action="{{ route('updateBrand', $item->id) }}" method="POST">
                                 @csrf
                                 @method('PUT')
                                 <div class="modal-body">
-                                    <h2>Edit Brand</h2>
+                                    <h2><center>Edit Brand</center></h2>
+                                    <br>
                                     <br>
                                     <div class="wave-group">
                                         <input required="" type="text" class="input" name="name" value="{{ $item->name }}" required>
@@ -68,8 +68,12 @@
                                         </label>
                                     </div>
                                 </div>
+                                <br>
+                                <br>
                                 <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary">Update</button>
+                                    <center><button class="button" type="submit"  value="Submit"> Submit
+                                    </button>
+                                    </button></center>                                
                                 </div>
                             </form>
                         </div>

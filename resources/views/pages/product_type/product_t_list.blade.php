@@ -52,22 +52,30 @@
                             <!--<h1 class="modal-title fs-5" id="exampleModalLabel">Edit info</h1>
                             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>-->
                         </div>
-                        <form action="{{ route('updateCategorie', $item->id) }}" method="POST">
+                        <form action="{{ route('UpdateCategorie', $item->id) }}" method="POST">
                             @csrf
                             @method('PUT')
-                            <div class="nameProduct wave-group">
-                                <input required="" type="text" class="input">
-                                <span class="bar"></span>
-                                <label class="label">
-                                    <span class="label-char" style="--index: 0">N</span>
-                                    <span class="label-char" style="--index: 1">a</span>
-                                    <span class="label-char" style="--index: 2">m</span>
-                                    <span class="label-char" style="--index: 3">e</span>
-                                </label>
+                            <div class="modal-body">
+                                <h2><center>Edit Categorie</center></h2>
+                                <br>
+                                <br>
+                                <div class="wave-group">
+                                    <input required="" type="text" class="input" name="name" value="{{ $item->name }}" required>
+                                    <span class="bar"></span>
+                                    <label class="label">
+                                        <span class="label-char" style="--index: 0">N</span>
+                                        <span class="label-char" style="--index: 1">a</span>
+                                        <span class="label-char" style="--index: 2">m</span>
+                                        <span class="label-char" style="--index: 3">e</span>
+                                    </label>
                                 </div>
+                            </div>
+                            <br>
+                            <br>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Update</button>
+                                <center><button class="button" type="submit"  value="Submit"> Submit
+                                </button>
+                                </button></center>                                
                             </div>
                         </form>
                     </div>

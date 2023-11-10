@@ -36,7 +36,20 @@
                 </label>
             </div>
             <br>
-            <select name="supplier" id="" class="custom-select">
+            <div class="wave-group">
+                <input required="" type="text" class="input" name="total" required>
+                <span class="bar"></span>
+                <label class="label">
+                <span class="label-char" style="--index: 0">T</span>
+                <span class="label-char" style="--index: 1">o</span>
+                <span class="label-char" style="--index: 2">t</span>
+                <span class="label-char" style="--index: 3">a</span>
+                <span class="label-char" style="--index: 4">l</span>
+                </label>
+            </div>
+            <br>
+            <br>
+            <select name="buy" id="" class="custom-select">
                 <option value="" >Select buy</option>
                 @foreach ($buy as $item)
                     <option value="{{$item->id}}">{{$item->name}}</option>
@@ -44,7 +57,7 @@
             </select>
             <br>
             <br>
-            <select name="supplier" id="" class="custom-select">
+            <select name="employee" id="" class="custom-select">
                 <option value="" >Select Employee</option>
                 @foreach ($employee as $item)
                     <option value="{{$item->id}}">{{$item->name}}</option>
