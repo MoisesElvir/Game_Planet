@@ -19,14 +19,15 @@
                     <a href="#" class="social"><i class='bx bxl-linkedin' style='color:#0d75b1'  ></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Name"  />
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
                 <button>Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="{{ route('inicio.sesion') }}" method="POST">
+                @method('GET')
                 <h1>Sign in</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class='bx bxl-facebook-circle' style='color:#2200b9'></i></i></a>
@@ -34,11 +35,19 @@
                     <a href="#" class="social"><i class='bx bxl-linkedin' style='color:#0d75b1'  ></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" /   >
-                <input type="password" placeholder="Password" />
+                <input type="email" placeholder="Email"  name="email" /    >
+                <input type="password" placeholder="Password" name="password" />
                 <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <button type="submit">Sign In</button>
             </form>
+            @error('email')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
+
+            @error('password')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
+
         </div>
         <div class="overlay-container">
             <div class="overlay">

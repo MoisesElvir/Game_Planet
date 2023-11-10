@@ -69,7 +69,7 @@
         </select>
         <br>
         <br>
-        <select name="supplier" id="" class="custom-select">
+        <select name="brand" id="" class="custom-select">
             <option value="" >Select Brand</option>
             @foreach ($brand as $item)
                 <option value="{{$item->id}}">{{$item->name}}</option>
@@ -77,7 +77,7 @@
         </select>
         <br>
         <br>
-        <select name="supplier" id="" class="custom-select">
+        <select name="categorie" id="" class="custom-select">
             <option value="" >Select Categorie</option>
             @foreach ($categorie as $item)
                 <option value="{{$item->id}}">{{$item->name}}</option>

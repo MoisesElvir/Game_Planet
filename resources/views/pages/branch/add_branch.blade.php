@@ -48,7 +48,7 @@
         
             <br>
             <br>
-            <select name="supplier" id="" class="custom-select">
+            <select name="id_product" id="" class="custom-select">
                 <option value="" >Select Product</option>
                 @foreach ($product as $item)
                     <option value="{{$item->id}}">{{$item->name}}</option>

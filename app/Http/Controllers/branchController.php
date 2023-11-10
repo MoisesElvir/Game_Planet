@@ -29,7 +29,7 @@ class branchController extends Controller
         $branch->name = $request->post('name');
         $branch->address = $request->post('address');
         $branch->phone = $request->post('phone');
-//        $branch->id_product = $request->post('id_product');
+        $branch->id_product = $request->post('id_product');
 
         $branch->save();
 
