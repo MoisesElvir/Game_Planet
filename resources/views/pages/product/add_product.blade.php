@@ -61,7 +61,6 @@
             </label>
         </div>
         <br>
-        <br>
         <select name="supplier" id="" class="custom-select">
             <option value="" >Select Supplier</option>
             @foreach ($supplier as $item)
@@ -86,7 +85,10 @@
         </select>
         <br>
         <br>
-        <input type="submit" class="btn btn-primary mt-4" value="Add Product">
+        <!--<input type="submit" class="btn btn-primary mt-4" value="Add Product">-->
+        <center><button class="button" type="submit"  value="Submit"> Submit
+            </button>
+            </button></center>
         
     </form>
 </div>
